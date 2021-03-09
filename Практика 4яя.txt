@@ -1,36 +1,46 @@
 =======1=======
+PythonProject2
 =======2=======
+import os
+
+dir_path = os.path.dirname(os.path.realpath(__file__))
+
+for root, dirs, files in os.walk(dir_path):
+    for file in files:
+
+        if file.endswith('Nazar.txt'):
+            print(root + '/' + str(file))
 =======3=======
 import random
 
 n = random.randint(1, 12)
-print('Введите ваш вопрос и нажмите клавишу «enter»:')
+print('Р’РІРµРґРёС‚Рµ РІР°С€ РІРѕРїСЂРѕСЃ Рё РЅР°Р¶РјРёС‚Рµ РєР»Р°РІРёС€Сѓ В«enterВ»:')
 input()
 
 if n == 1:
-    print('Да')
+    print('Р”Р°')
 elif n == 2:
-    print('Нет')
+    print('РќРµС‚')
 elif n == 3:
-    print('Сейчас')
+    print('РЎРµР№С‡Р°СЃ')
 elif n == 4:
-    print('Завтра')
+    print('Р—Р°РІС‚СЂР°')
 elif n == 5:
-    print('Позже')
+    print('РџРѕР·Р¶Рµ')
 elif n == 6:
-    print('Никогда ни за что')
+    print('РќРёРєРѕРіРґР° РЅРё Р·Р° С‡С‚Рѕ')
 elif n == 7:
-    print('Может быть')
+    print('РњРѕР¶РµС‚ Р±С‹С‚СЊ')
 elif n == 8:
-    print('Спроси позже')
+    print('РЎРїСЂРѕСЃРё РїРѕР·Р¶Рµ')
 elif n == 9:
-    print('Не рассчитывай на это')
+    print('РќРµ СЂР°СЃСЃС‡РёС‚С‹РІР°Р№ РЅР° СЌС‚Рѕ')
 elif n == 10:
-    print('Наиболее вероятно')
+    print('РќР°РёР±РѕР»РµРµ РІРµСЂРѕСЏС‚РЅРѕ')
 elif n == 11:
-    print('Определённо да!')
+    print('РћРїСЂРµРґРµР»С‘РЅРЅРѕ РґР°!')
 elif n == 12:
-    print('Определённо нет!')
+    print('РћРїСЂРµРґРµР»С‘РЅРЅРѕ РЅРµС‚!')
 
 =======4=======
 =======5=======
@@ -38,13 +48,13 @@ from tkinter import *
 
 
 def clicked():
-    lbl.configure(text="Привет")
+    lbl.configure(text="РџСЂРёРІРµС‚")
 
 
 window = Tk()
-window.title("Добро пожаловать в приложение PythonRu")
-lbl = Label(window, text="Здраствуйте")
+window.title("Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ РІ РїСЂРёР»РѕР¶РµРЅРёРµ PythonRu")
+lbl = Label(window, text="Р—РґСЂР°СЃС‚РІСѓР№С‚Рµ")
 lbl.grid(column=0, row=0)
-btn = Button(window, text="Нажми", command=clicked)
+btn = Button(window, text="РќР°Р¶РјРё", command=clicked)
 btn.grid(column=1, row=0)
 window.mainloop()
